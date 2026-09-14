@@ -132,9 +132,13 @@ z-index: -1;
 
 
 div#banner{
-  width: 100%;
+  /* Fixed-width, centered, and the positioning reference for #anime and
+     the .PI popup captions below, so the captions land relative to the
+     map image instead of the browser viewport. */
+  position: relative;
+  width: 1400px;
   height: 13230px;
-  margin-left: 13px;
+  margin: 0 auto;
   /*background-color: #000;*/
   /* background image lives on #anime now, so it can never drift apart
      from the SVG overlay it needs to line up with (see #anime below) */
@@ -151,8 +155,8 @@ div#banner{
 
   position:absolute;
   z-index: 3;
-  top:100%;
-  right: 1.5%;
+  top: 0;
+  left: 0;
 
   /* Same box the SVG artwork draws in (1400x13221, from its own width/height
      attributes), so the river background can never end up positioned
