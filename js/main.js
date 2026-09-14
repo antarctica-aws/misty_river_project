@@ -456,6 +456,16 @@
                 else{
                   $("#PI23").hide();
                 };
+
+                // Hide the swimmer once the closing popup is reached; it
+                // reappears once the user scrolls back away from the
+                // bottom (e.g. via the "Back to the Top" button).
+                if (scrollval >= maxScroll - 60){
+                  $("#bd").hide();
+                }
+                else{
+                  $("#bd").show();
+                };
             }
 
             // Run once immediately (in case the page loads already
