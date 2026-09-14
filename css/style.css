@@ -518,9 +518,12 @@ p{
 
 }
 
-/* Always visible -- sit right at the top of the map, no scroll-toggle. */
+/* Always visible -- sit right at the top of the map, no scroll-toggle.
+   Lower z-index than .modal (6) so they sit behind the initial
+   "Swimming Instruction" dialogue instead of showing through it. */
 #PI3, #PI4{
   display: block;
+  z-index: 5;
 }
 
 h6{
