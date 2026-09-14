@@ -132,7 +132,14 @@ z-index: -1;
 
 
 div#banner{
-  width: 100%;
+  /* Fixed-width, centered stage: everything inside (the map, the swimmer,
+     and the popup captions) shares this box as its positioning reference,
+     so they can never drift apart on different screen widths. */
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  /* Nudge the whole stage right a bit from dead-center. */
+  left: 40px;
   height: 13230px;
   /*background-color: #000;*/
 }
@@ -149,7 +156,6 @@ div#banner{
   display: block;
   position: relative;
   z-index: 3;
-  margin: 0 auto;
   background-image: url(../assets/background2.png);
   background-repeat: no-repeat;
   background-position: 0 0;
