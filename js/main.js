@@ -270,7 +270,7 @@
           $(function() {
             function updatePIVisibility(){
                 var scrollval=$(window).scrollTop();
-                if (scrollval>=880){
+                if (scrollval>=1030){
 
                   $("#PI1").show();
 
@@ -278,7 +278,7 @@
                 else{
                   $("#PI1").hide();
                 };
-                if (scrollval>=1380){
+                if (scrollval>=1530){
 
                   $("#PI2").show();
 
@@ -286,7 +286,7 @@
                 else{
                   $("#PI2").hide();
                 };
-                if (scrollval>=830){
+                if (scrollval>=980){
 
                   $("#PI3").show();
 
@@ -294,7 +294,7 @@
                 else{
                   $("#PI3").hide();
                 };
-                if (scrollval>=850){
+                if (scrollval>=1000){
 
                   $("#PI4").show();
 
@@ -302,7 +302,7 @@
                 else{
                   $("#PI4").hide();
                 };
-                 if (scrollval>=1470){
+                 if (scrollval>=1620){
 
                   $("#PI5").show();
 
@@ -310,7 +310,7 @@
                 else{
                   $("#PI5").hide();
                 };
-                if (scrollval>=2450){
+                if (scrollval>=2600){
 
                   $("#PI6").show();
 
@@ -318,7 +318,7 @@
                 else{
                   $("#PI6").hide();
                 };
-                if (scrollval>=1750){
+                if (scrollval>=1900){
 
                   $("#PI8").show();
 
@@ -326,7 +326,7 @@
                 else{
                   $("#PI8").hide();
                 };
-                if (scrollval>=1900){
+                if (scrollval>=2050){
 
                   $("#PI7").show();
 
@@ -334,7 +334,7 @@
                 else{
                   $("#PI7").hide();
                 };
-                if (scrollval>=2200){
+                if (scrollval>=2350){
 
                   $("#PI9").show();
 
@@ -342,7 +342,7 @@
                 else{
                   $("#PI9").hide();
                 };
-                if (scrollval>=2350){
+                if (scrollval>=2500){
 
                   $("#PI6").show();
 
@@ -350,7 +350,7 @@
                 else{
                   $("#PI6").hide();
                 };
-                if (scrollval>=2645){
+                if (scrollval>=2795){
 
                   $("#PI10").show();
 
@@ -358,7 +358,7 @@
                 else{
                   $("#PI10").hide();
                 };
-                if (scrollval>=2770){
+                if (scrollval>=2920){
 
                   $("#PI11").show();
 
@@ -366,7 +366,7 @@
                 else{
                   $("#PI11").hide();
                 };
-                if (scrollval>=3030){
+                if (scrollval>=3180){
 
                   $("#PI12").show();
 
@@ -374,7 +374,7 @@
                 else{
                   $("#PI12").hide();
                 };
-                if (scrollval>=3200){
+                if (scrollval>=3350){
 
                   $("#PI13").show();
 
@@ -382,7 +382,7 @@
                 else{
                   $("#PI13").hide();
                 };
-                if (scrollval>=3350){
+                if (scrollval>=3500){
 
                   $("#PI15").show();
 
@@ -390,7 +390,7 @@
                 else{
                   $("#PI15").hide();
                 };
-                if (scrollval>=3550){
+                if (scrollval>=3700){
 
                   $("#PI14").show();
 
@@ -398,7 +398,7 @@
                 else{
                   $("#PI14").hide();
                 };
-                if (scrollval>=3800){
+                if (scrollval>=3950){
 
                   $("#PI16").show();
 
@@ -406,7 +406,7 @@
                 else{
                   $("#PI16").hide();
                 };
-                if (scrollval>=4350){
+                if (scrollval>=4500){
 
                   $("#PI17").show();
 
@@ -414,7 +414,7 @@
                 else{
                   $("#PI17").hide();
                 };
-                if (scrollval>=6000){
+                if (scrollval>=6150){
 
                   $("#PI18").show();
 
@@ -422,7 +422,7 @@
                 else{
                   $("#PI18").hide();
                 };
-                if (scrollval>=9300){
+                if (scrollval>=9450){
 
                   $("#PI19").show();
 
@@ -430,7 +430,7 @@
                 else{
                   $("#PI19").hide();
                 };
-                if (scrollval>=12160){
+                if (scrollval>=12310){
 
                   $("#PI20").show();
 
@@ -438,7 +438,7 @@
                 else{
                   $("#PI20").hide();
                 };
-                if (scrollval>=13100){
+                if (scrollval>=13250){
 
                   $("#PI21").show();
 
@@ -446,7 +446,7 @@
                 else{
                   $("#PI21").hide();
                 };
-                if (scrollval>=13420){
+                if (scrollval>=13570){
 
                   $("#PI22").show();
 
@@ -454,7 +454,7 @@
                 else{
                   $("#PI22").hide();
                 };
-                 if (scrollval>=13420){
+                 if (scrollval>=13570){
 
                   $("#PI23").show();
 
