@@ -285,10 +285,15 @@ h3 {
   z-index: 5;
   float:right;
   transform: rotate(90deg);
+  /* Rotate around the right edge instead of the (default) center: with
+     an auto-width button, center-rotation visually pulls the right edge
+     inward by ~half the button's width, which is why right:0 alone
+     left it looking far from the screen edge. Pivoting on the right
+     edge means the needed offset only depends on the button's height. */
+  transform-origin: right center;
   font-size: 15px;
   top: 116%;
-  /* Pinned flush to the actual screen edge, regardless of screen width. */
-  right: 0;
+  right: 24px;
   border: none;
   outline: none;
   background-color: #FFC300;
