@@ -187,6 +187,7 @@ section::after {
 }
 
 .pageTitle{
+  position: relative;
   height: 230px;
   padding-top: 5px;
   padding-bottom:10px;
@@ -197,7 +198,8 @@ section::after {
 h3 {
   position: absolute;
   top: 130px;
-  left: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 0.5em;
   /*text-indent:25px;*/
   text-align:justify;
