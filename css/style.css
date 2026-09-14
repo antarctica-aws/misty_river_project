@@ -1,0 +1,508 @@
+
+body, html {
+    height: 100%;
+
+}
+
+body {
+  margin: 0;
+  /*font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 300;*/
+  fill: #242424;
+  text-align: center;
+  /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff*/;
+  cursor: default;
+  /*background-color: rgba(87, 105, 77,0.);*/
+  background: rgba(248, 248, 249); /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(rgba(108, 180, 200,0.6), rgba(52, 128, 151,0.6)); /* For Safari 5.1 to 6.0 */*/
+}
+
+
+#content{
+  height: 1300px;
+  z-index: -1;
+}
+
+#background{
+  margin-left: -15%;
+
+}
+
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url("../assets/swimming_trimmed.gif");
+    background-size: cover;
+
+    /* Set a specific height */
+    height: 64.5%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+h2{
+  letter-spacing: 3px;
+  font-size: 1.3em;
+  font-family: 'Cormorant Garamond';
+  color: rgb(25,24,23);
+}
+
+
+
+#container{
+  margin-top: 1%;
+  height: 13230px;
+  margin-left: 0;
+  padding-left: 0;
+  z-index: 0;
+  overflow-y:scroll;
+  /*background-image: url('../assets/backgroundCity.jpg');
+  background-image-width:900px;*/
+  /*background-repeat: no-repeat; 
+  background-position: center center;*/
+}
+/*#container h1, h3, p{
+  top: 20%;
+  position: fixed;
+}*/
+
+/*h1{
+  top: 50px;
+  width: 600px;
+  text-align: center;
+  left: 50%;
+  margin-left: -300px;
+}
+
+h3{
+  top: 150px;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+
+}
+
+p{
+  top: 190px;
+  width: 400px;
+  left: 50%;
+  margin-left: -200px;
+}*/
+/*
+.background{
+  position: absolute;
+  margin-left: 5%;
+  width: 100%;
+  height: 8200px;
+  margin-top: 50%;
+  background: url("../assets/backgroundCity.jpg");
+  background-repeat: no-repeat;
+  z-index: -2;
+
+}
+
+.bd{
+position: fixed;
+width: 300px;
+height: 193px;
+top: 20%;
+left: 60%;
+overflow: visible;
+background: url("../assets/bd-swim.png");
+z-index: -1;
+}*/
+
+
+
+
+div#banner{
+  width: 100%;
+  height: 13230px;
+  margin-left: 13px;
+  /*background-color: #000;*/
+  background-image: url(../assets/background2.png);
+  /*background-size: 90% 90%;*/
+  background-position: 10% 0%;
+  background-repeat: no-repeat;
+  animation: animate-background linear 50s infinite;
+}
+/*@keyframes animate-background {
+  from { background-position: 120% 70px;  } 
+  to { background-position: -20% 70px; }
+}*/
+
+
+
+
+#anime {
+  
+  position:absolute; 
+  z-index: 3;
+  top:100%; 
+  right: 1.5%;
+  
+ 
+}
+
+#animeMotion:hover{
+  animation-play-state: paused;
+
+}
+
+
+path#isar-down{
+  top:90%;
+  left:50%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 0%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 20%;
+  
+}
+
+.pageTitle{
+  height: 230px;
+  padding-top: 5px;
+  padding-bottom:10px;
+  font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+}
+
+
+h3 {
+  position: absolute;
+  top: 130px;
+  left: 30%;
+  font-size: 0.5em;
+  /*text-indent:25px;*/
+  text-align:justify;
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: lighter;
+  color: rgb(34,34,34);
+  /*line-height: 1.35em;*/
+  text-align: center;
+}
+
+#hero-image a {
+  padding-top: 60px;
+}
+#hero-image a span {
+  position: absolute;
+ /* top: 140%;*/
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#hero-image a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+
+#toggle{
+  
+  position: absolute; 
+  z-index: 5;
+  top: 112%; 
+  left: -1.5%;
+  width: 110px;
+  float:left;
+  font-size: 15px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(270deg);
+  border: none;
+  outline: none;
+  background-color: #FFC300;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*#toggle:hover{
+  background-color: #555;
+}*/
+
+
+#myBtn{
+  position: absolute;
+  z-index: 5;
+  float:right;
+  transform: rotate(90deg);
+  font-size: 15px;
+  top: 116%;
+  right: -5%;
+  border: none;
+  outline: none;
+  background-color: #FFC300;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+/*#myBtn:hover{
+  background-color: #555;
+}
+*/
+
+
+#goback {
+  display: none;
+  position: fixed;
+  font-size: 15px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #FFC300;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#goback:hover{
+  background-color: #555;
+}
+
+form{
+  
+  font-family:  "Cormorant Garamond";
+  font-size: 1em;
+  
+
+}
+
+.checks{
+  margin-top: 4%;
+}
+
+
+/*.map {
+  position: relative;
+  overflow: scroll;
+}
+
+.layer {
+  position: absolute;
+  will-change: transform;
+}
+*/
+
+
+
+.legend {
+  
+  font-family: "Cormorant Garamond";
+  fill: #333333;
+}
+
+.radarChart {
+  position: absolute;
+  z-index: 5;
+  left: 0%;
+  top:125%;
+  float: right;
+  background-color: rgba(252, 253, 255,0.9);
+  border-radius: 4px;
+  overflow: visible;
+  width: 415px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+
+
+.myCheckbox .value{
+  color: red;
+ 
+
+}
+
+.pageTitle {
+    padding-top: 1.2%;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color:#4d5c66;
+}
+
+.intro {
+
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 1&;
+}
+
+
+/*/*styling for the point-line trial*/
+/*#pointLine .Path {
+  fill: none;
+  stroke:red;
+  stroke-width: 3px;
+}
+*/
+/*#pointLine .circle {
+  fill: steelblue;
+  stroke: #fff;
+  stroke-width: 3px;
+}*/
+
+
+
+.modal {
+    display: block; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 6; /* Sit on top */
+ 
+    /*left: 35%;
+    top: 900px;*/
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 815px;
+    width: 100%; /* Full width */
+    height: 58%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    
+    
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 700px;
+    height: 164px;
+    border-radius: 10px;
+}
+
+h4{
+  padding: none;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  color: #FFC300;
+  font-family: 'Cormorant Garamond';
+  font-size: 1.2em;
+  color: rgb(25,24,23);
+}
+
+p{
+  font-family: 'Cormorant Garamond';
+  font-size: 0.98em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+/* The Close Button */
+.close {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  margin-top: 3px;
+    color: white;
+    float: right;
+    font-size: 1em;
+    /*font-weight: bold;*/
+    left: 53%;
+    background-color: #FFC300;
+    font-family: "Ariel";
+}
+
+.close:hover,
+.close:focus {
+    color: #605943;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.PI{
+
+  position: absolute;
+  color: rgb(68, 61, 94);
+  font-weight: 800;
+  
+  width: 150px;
+  border-radius: 5px;
+  border: 2px solid none  ;
+  background-color: rgba(247, 244, 246,0.7);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+
+h6{
+  font-size: 0.85em;
+  font-family: 'Cormorant Garamond';
+  color: rgb(25,24,23);
+  
+  padding: none;
+}
+
+#footerwrap{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: rgba(215, 241, 247,0.3);
+}

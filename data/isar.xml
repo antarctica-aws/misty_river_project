@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.6.0 (8437 thorn-02.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <relation id="273028" visible="true" version="57" changeset="51461938" timestamp="2017-08-26T15:45:15Z" user="Thomas Wagner" uid="32744">
+  <member type="node" ref="1378892303" role="spring"/>
+  <member type="node" ref="1782842542" role="spring"/>
+  <member type="node" ref="1782842545" role="spring"/>
+  <member type="node" ref="477594798" role="spring"/>
+  <member type="way" ref="123740174" role="main_stream"/>
+  <member type="way" ref="206068759" role="main_stream"/>
+  <member type="way" ref="206068760" role="main_stream"/>
+  <member type="way" ref="78531505" role="main_stream"/>
+  <member type="way" ref="297274397" role="main_stream"/>
+  <member type="way" ref="199738606" role="main_stream"/>
+  <member type="way" ref="199738605" role="main_stream"/>
+  <member type="way" ref="78531504" role="main_stream"/>
+  <member type="way" ref="157957171" role="main_stream"/>
+  <member type="way" ref="41480173" role="main_stream"/>
+  <member type="way" ref="157957170" role="main_stream"/>
+  <member type="way" ref="41480157" role="main_stream"/>
+  <member type="way" ref="518859700" role="main_stream"/>
+  <member type="way" ref="518859701" role="main_stream"/>
+  <member type="way" ref="518859699" role="main_stream"/>
+  <member type="way" ref="128524973" role="main_stream"/>
+  <member type="way" ref="243489155" role="main_stream"/>
+  <member type="way" ref="243489156" role="main_stream"/>
+  <member type="way" ref="157959518" role="main_stream"/>
+  <member type="way" ref="257834059" role="main_stream"/>
+  <member type="way" ref="257834061" role="main_stream"/>
+  <member type="way" ref="258077360" role="main_stream"/>
+  <member type="way" ref="162975633" role="main_stream"/>
+  <member type="way" ref="41480171" role="main_stream"/>
+  <member type="way" ref="152515582" role="main_stream"/>
+  <member type="way" ref="41480164" role="main_stream"/>
+  <member type="way" ref="152515575" role="main_stream"/>
+  <member type="way" ref="114433444" role="main_stream"/>
+  <member type="way" ref="114433442" role="main_stream"/>
+  <member type="way" ref="102539846" role="main_stream"/>
+  <member type="way" ref="157287570" role="main_stream"/>
+  <member type="way" ref="4298062" role="main_stream"/>
+  <member type="way" ref="96132047" role="main_stream"/>
+  <member type="way" ref="41480176" role="main_stream"/>
+  <member type="way" ref="171381873" role="main_stream"/>
+  <member type="way" ref="41480156" role="main_stream"/>
+  <member type="way" ref="41480148" role="main_stream"/>
+  <member type="way" ref="41480146" role="main_stream"/>
+  <member type="way" ref="26766970" role="main_stream"/>
+  <member type="way" ref="41480144" role="main_stream"/>
+  <member type="way" ref="25554657" role="main_stream"/>
+  <member type="way" ref="41734234" role="main_stream"/>
+  <member type="way" ref="41734235" role="main_stream"/>
+  <member type="way" ref="41480141" role="main_stream"/>
+  <member type="way" ref="23603962" role="main_stream"/>
+  <member type="way" ref="41480137" role="main_stream"/>
+  <member type="way" ref="77235923" role="main_stream"/>
+  <member type="way" ref="41480135" role="main_stream"/>
+  <member type="way" ref="116587427" role="main_stream"/>
+  <member type="way" ref="116587429" role="main_stream"/>
+  <member type="way" ref="41480130" role="main_stream"/>
+  <member type="way" ref="41480129" role="main_stream"/>
+  <member type="way" ref="4878720" role="main_stream"/>
+  <member type="way" ref="41480127" role="main_stream"/>
+  <member type="way" ref="116587428" role="main_stream"/>
+  <member type="way" ref="4878721" role="main_stream"/>
+  <member type="way" ref="4416865" role="main_stream"/>
+  <member type="way" ref="41480178" role="main_stream"/>
+  <member type="way" ref="41480177" role="main_stream"/>
+  <member type="way" ref="28577536" role="main_stream"/>
+  <member type="way" ref="28577614" role="main_stream"/>
+  <member type="way" ref="28577748" role="main_stream"/>
+  <member type="way" ref="51372964" role="side_stream"/>
+  <member type="way" ref="35148416" role="side_stream"/>
+  <member type="way" ref="377429009" role="side_stream"/>
+  <member type="way" ref="257834058" role="side_stream"/>
+  <member type="way" ref="257834055" role="side_stream"/>
+  <member type="way" ref="257834060" role="side_stream"/>
+  <member type="way" ref="243007418" role="side_stream"/>
+  <member type="way" ref="41480147" role="side_stream"/>
+  <member type="way" ref="119188125" role="side_stream"/>
+  <member type="way" ref="4416864" role="side_stream"/>
+  <member type="way" ref="166860913" role="side_stream"/>
+  <tag k="destination" v="Donau"/>
+  <tag k="name" v="Isar"/>
+  <tag k="name:ru" v="Изар"/>
+  <tag k="ref:fgkz" v="16"/>
+  <tag k="type" v="waterway"/>
+  <tag k="waterway" v="river"/>
+  <tag k="wikidata" v="Q106588"/>
+  <tag k="wikipedia" v="de:Isar"/>
+ </relation>
+</osm>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="maps, cartography">
+		<title>Misty River Project</title>
+		<link rel="shortcut icon" href="assets/m2.png">
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cormorant+Garamond">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dosis">
+
+
+		<script>
+
+		function myFunction() {
+		    var x = document.getElementById("radarChart");
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+		}
+
+
+		function showMe0 () {
+
+
+		    var x=document.getElementById("spiderNet0");
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+
+		}
+		function showMe1 () {
+
+		    var x=document.getElementById("spiderNet1");
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+
+		}
+		function showMe2 () {
+
+		    var x=document.getElementById("spiderNet2");
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+
+		}
+		function showMe3 () {
+
+		    var x=document.getElementById("spiderNet3");
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+
+		}
+
+		function showMe4 () {
+
+		    var x=document.getElementById("spiderNet4");
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+
+		}
+		function showMe5 () {
+
+		    var x=document.getElementById("spiderNet5");
+
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+
+		}
+
+
+
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+		        document.getElementById("goback").style.display = "block";
+		    } else {
+		        document.getElementById("goback").style.display = "none";
+		    }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		    document.body.scrollTop = 820;
+		    document.documentElement.scrollTop = 820;
+
+
+		   };
+
+
+		</script>
+
+
+	</head>
+
+
+	<body>
+
+
+		<div class="pageTitle">
+
+			<h2>The Misty River Project</h2>
+			<center><h3>There is a river flowing through Munich: the Isar.<br>
+						Benjamin David commutes to work by swimming in the river. <br>
+						Let him guide you on a journey exploring Munich via the river Isar!</h3></center>
+
+		</div>
+		<div class="hero-image" id="hero-image">
+		  	<div class="hero-text">
+
+
+
+
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<br></br>
+				<section id="hero-image" class="demo">
+			   		 <a href="#container"><span></span></a>
+			   	</section>
+
+		  	</div>
+		</div>
+
+
+			<!-- Trigger/Open The Modal -->
+			<button id="myBtn">Swimming Instruction</button>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+			  <!-- Modal content -->
+			  <div class="modal-content">
+			  	<img src="assets/bd-stand.png" alt="bd-standing" width="130" height="145" style="float:left;">
+
+			    <h4>Swimming Instruction</h4>
+			    <p>Hello, I'm Benjamin! I commute to work by swimming down the Isar river. On the glorious day of July 1st, 2016, join me to
+			    	explore the majestic river, Isar! Our journey will <b><span style="font-size:1.25em;"> start automatically</span></b>! Just  <b><span style="font-size:1.25em;"> scroll down </span></b> to follow my speed. Remember <b><span style="font-size:1.25em;">South is up</span></b>  since Isar originates in the Alps in Austria.
+			    	Check out the river conditions on the left panel! Now hold on tight to our special floating bladder! Let's start!
+			    </p>
+			    <span class="close">Got it!</span>
+			  </div>
+
+			</div>
+
+
+		<div class="container" id="container" >
+
+
+
+			<button id="toggle" onclick="myFunction()"
+	    		>Hide/Show River Radar Chart</button>
+
+		    	<div id="radarChart" class="radarChart">
+		    		<div class="checks">
+
+
+						<form>
+							<input type="checkbox" id="c0" onclick="showMe0()" checked>July 1st
+							<input type="checkbox" id="c1" onclick="showMe1()" checked>Spring
+							<input type="checkbox" id="c2" onclick="showMe2()" checked>Summer<br>
+							<input type="checkbox" id="c3" onclick="showMe3()" checked>Autumn
+							<input type="checkbox" id="c4" onclick="showMe4()" checked>Winter
+							<input type="checkbox" id="c5" onclick="showMe5()" checked>Annual Average
+						</form>
+
+		    		</div>
+
+		    		<div class="chart" style="float:left;">
+		    		</div>
+		    	</div>
+
+
+
+
+			<div id="banner">
+
+				 <svg id="anime" width="1400px"
+	 height="13221px" viewBox="0 0 1400 13221"
+				    xmlns="http://www.w3.org/2000/svg" version="1.1"
+				    xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+				  <!-- Draw the outline of the motion path in grey, along
+				       with 2 small circles at key points -->
+				  <path d="M1135.113,217.26c-37.813,120.569-28.604,239.241-85.628,357.143
+		c-56.53,116.89-428.342,871.7-498.036,1134.261c-55.951,210.78-17.651,441.831-40.01,661.501
+		c15.757,251.538-80.149,363.183-92.195,467.114c-18.524,159.806-12.451,318.647,30.155,478.181
+		c26.625,99.685,37.036,200.19,60.63,299.706c7.866,33.171,74.841,203.489,100.106,254.224
+		c33.17,66.605,64.396,133.107,75.242,205.684c39.772,266.17-41.557,502.422-41.331,767.188
+		c0.057,68.996-3.684,137.449-9.074,205.849c-15.873,201.436-31.616,689.358-29.292,726.671
+		c14.241,228.56,35.046,466.399,23.486,692.467c-13.072,255.598-74.406,492.016-74.406,755.617
+		c0,272.563,17.883,535.221,14.88,809.898c-3.455,316.097-2.758,646.316,0,964.24c0.674,77.677-12.872,150.02-26.924,221.817
+		c-12.803,65.413-15.362,421.431-1.314,530.053c7.275,56.258,13.112,112.593,13.306,169.926
+		c0.464,137.654-12.508,261.828,14.933,391.039c24.239,114.127,63.1,236.425,74.75,357.189
+		c25.718,266.601,25.612,516.039,99.741,770.449c36.776,126.204,39.986,258.797,78.878,386.905
+		c41.691,137.313,109.696,213.915,167.379,341.145c112.386,247.892,78.649,514.285-15.279,749.905
+		c-30.444,76.371-79.793,163.627-92.969,248.229"
+				      style="fill:none;stroke:none;stroke-linecap:round;stroke-miterlimit:10;"
+				      id="theMotionPath"/>
+
+
+				  	<g id="bd" transform="rotate(-15) translate(-814.904,-69.235) scale(0.65, 0.65) ">
+						<polygon fill="#A0DCF8" points="1253.704,69.235 1261.197,70.88 1265.947,68.505 1269.787,63.752 1273.439,55.709 1277.28,49.677
+							1287.878,51.505 1292.082,45.655 1295.555,42.549 1300.122,51.14 1311.27,51.688 1308.893,54.247 1299.39,61.558 1291.535,66.676
+							1279.288,71.612 1268.689,72.525 1257.175,78.374 		"/>
+						<polygon fill="#A0DCF8" points="1181.518,108.899 1187.731,118.221 1192.667,121.146 1208.747,119.318 1220.445,120.415
+							1231.773,118.04 1226.838,114.017 1218.068,110.362 1226.291,110.362 1232.324,112.738 1240.178,112.556 1246.027,108.535
+							1249.682,109.265 1256.446,102.868 1269.237,99.76 1276.549,94.094 1295.006,89.159 1306.701,83.127 1318.215,75.268
+							1323.879,71.978 1320.59,88.793 1312.55,107.071 1299.39,115.48 1280.751,110.362 1254.801,116.029 1233.602,122.791
+							1212.584,128.64 1182.431,130.285 1152.826,121.329 1151,112.92 1164.156,103.233 1174.207,97.019 		"/>
+						<polygon fill="#A0DCF8" points="1218.068,110.362 1226.838,114.017 1231.773,118.04 1220.445,120.415 1208.747,119.318
+							1192.667,121.146 1187.731,118.221 1181.518,108.899 1192.667,114.017 1202.351,116.029 1212.403,116.394 		"/>
+
+							<polygon fill="#ED1C24" stroke="#ED1C24" stroke-width="1.9199" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1257.175,78.374 1247.125,86.6 1246.027,83.676 1244.566,77.461 1241.095,62.837 1246.395,61.741 1253.704,69.235 		"/>
+
+							<polygon fill="#ED1C24" stroke="#ED1C24" stroke-width="1.9199" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1190.837,70.149 1193.763,86.783 1194.127,92.998 1196.685,99.213 1195.225,99.76 1184.626,105.609 1181.518,108.899
+							1177.496,103.416 1174.207,97.019 1173.66,88.793 1176.949,81.482 1185.903,73.622 		"/>
+						<polygon fill="#644A46" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1208.381,103.416 1205.46,103.05 1205.641,101.405 1203.446,93.545 1201.438,90.438 1198.331,87.33 1193.763,86.783
+							1190.837,75.816 1190.837,70.149 1193.215,64.665 1200.341,56.258 1206.005,52.236 1217.155,49.128 1225.196,48.215
+							1232.869,53.149 1241.095,62.837 1244.566,77.461 1242.374,72.159 1239.631,66.312 1234.881,61.375 1230.496,64.301
+							1227.57,64.301 1224.28,67.773 1220.808,67.407 1213.135,67.042 1206.373,69.235 1203.446,74.17 1206.736,78.557 1205.641,81.482
+							1204.544,89.524 1209.113,94.825 		"/>
+						<polygon fill="#F4A27B" points="1198.331,87.33 1201.438,90.438 1203.446,93.545 1205.641,101.405 1205.46,103.05
+							1205.46,106.158 1200.888,106.158 1197.783,101.954 1194.127,92.998 1193.763,86.783 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1198.331,87.33 1201.438,90.438 1203.446,93.545 1205.641,101.405 1205.46,103.05 1205.46,106.158 1200.888,106.158
+							1197.783,101.954 1194.127,92.998 1193.763,86.783 1198.331,87.33 		"/>
+						<polygon fill="#F4A27B" points="1244.566,77.461 1246.027,83.676 1247.856,88.428 1249.135,102.686 1246.027,108.535
+							1240.178,112.556 1232.324,112.738 1226.291,110.362 1218.068,110.362 1210.758,107.62 1208.381,103.416 1209.113,94.825
+							1204.544,89.524 1205.641,81.482 1206.736,78.557 1203.446,74.17 1206.373,69.235 1213.135,67.042 1224.28,67.773 1227.57,64.301
+							1230.496,64.301 1234.881,61.375 1239.631,66.312 1242.374,72.159 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1244.566,77.461 1246.027,83.676 1247.856,88.428 1249.135,102.686 1246.027,108.535 1240.178,112.556 1232.324,112.738
+							1226.291,110.362 1218.068,110.362 1210.758,107.62 1208.381,103.416 1209.113,94.825 1204.544,89.524 1205.641,81.482
+							1206.736,78.557 1203.446,74.17 1206.373,69.235 1213.135,67.042 1224.28,67.773 1227.57,64.301 1230.496,64.301 1234.881,61.375
+							1239.631,66.312 1242.374,72.159 1244.566,77.461 		"/>
+						<polygon fill="#F4A27B" points="1247.125,86.6 1257.175,78.374 1268.689,72.525 1279.288,71.612 1291.535,66.676 1299.39,61.558
+							1308.893,54.247 1316.752,46.021 1333.746,36.333 1342.701,35.42 1353.484,29.936 1364.814,28.291 1372.492,24.27
+							1378.887,23.356 1384.187,22.077 1392.594,20.797 1400.086,25.184 1394.238,23.905 1387.658,23.722 1394.054,24.27
+							1399.354,26.099 1401,28.291 1396.797,28.474 1389.303,26.829 1378.34,25.733 1388.206,27.743 1398.441,29.571 1397.528,32.678
+							1392.227,32.861 1385.464,31.582 1375.413,30.484 1384.735,32.495 1390.763,35.968 1391.861,38.527 1382.724,37.979
+							1371.028,37.979 1364.814,35.42 1367.738,37.431 1372.854,39.989 1380.714,40.904 1381.81,44.193 1377.789,46.936
+							1372.854,46.753 1369.933,48.946 1362.44,48.032 1358.052,44.742 1354.947,46.936 1351.29,51.14 1345.626,57.903 1332.469,67.225
+							1318.215,75.268 1306.701,83.127 1295.006,89.159 1276.549,94.094 1269.237,99.76 1256.446,102.868 1249.682,109.265
+							1246.027,108.535 1249.135,102.686 1247.856,88.428 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1247.125,86.6 1257.175,78.374 1268.689,72.525 1279.288,71.612 1291.535,66.676 1299.39,61.558 1308.893,54.247 1316.752,46.021
+							1333.746,36.333 1342.701,35.42 1353.484,29.936 1364.814,28.291 1372.492,24.27 1378.887,23.356 1384.187,22.077
+							1392.594,20.797 1400.086,25.184 1394.238,23.905 1387.658,23.722 1394.054,24.27 1399.354,26.099 1401,28.291 1396.797,28.474
+							1389.303,26.829 1378.34,25.733 1388.206,27.743 1398.441,29.571 1397.528,32.678 1392.227,32.861 1385.464,31.582
+							1375.413,30.484 1384.735,32.495 1390.763,35.968 1391.861,38.527 1382.724,37.979 1371.028,37.979 1364.814,35.42
+							1367.738,37.431 1372.854,39.989 1380.714,40.904 1381.81,44.193 1377.789,46.936 1372.854,46.753 1369.933,48.946
+							1362.44,48.032 1358.052,44.742 1354.947,46.936 1351.29,51.14 1345.626,57.903 1332.469,67.225 1318.215,75.268 1306.701,83.127
+							1295.006,89.159 1276.549,94.094 1269.237,99.76 1256.446,102.868 1249.682,109.265 1246.027,108.535 1249.135,102.686
+							1247.856,88.428 1247.125,86.6 		"/>
+						<polygon fill="#F4A27B" points="1181.518,108.899 1184.626,105.609 1196.685,99.213 1197.783,101.954 1200.888,106.158
+							1205.46,106.158 1205.46,103.05 1208.381,103.416 1210.758,107.62 1218.068,110.362 1212.403,116.394 1202.351,116.029
+							1191.935,114.017 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1181.518,108.899 1184.626,105.609 1196.685,99.213 1197.783,101.954 1200.888,106.158 1205.46,106.158 1205.46,103.05
+							1208.381,103.416 1210.758,107.62 1218.068,110.362 1212.403,116.394 1202.351,116.029 1191.935,114.017 1181.518,108.899 		"/>
+						<polygon fill="#CD6666" points="1226.838,105.609 1229.581,101.771 1234.699,101.588 1238.352,100.126 1241.824,100.673
+							1239.084,101.771 1234.881,103.416 		"/>
+
+							<polyline fill="none" stroke="#F37A7B" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1226.838,105.609 1229.581,101.771 1234.699,101.588 1238.352,100.126 1241.824,100.673 1239.084,101.771 1234.881,103.416
+							1226.838,105.609 		"/>
+						<polygon fill="#CD6666" points="1226.838,105.609 1234.881,103.416 1239.084,101.771 1241.824,100.673 1241.276,102.319
+							1240.548,104.695 1238.352,106.706 1234.699,107.437 1231.41,107.437 		"/>
+
+							<polyline fill="none" stroke="#F37A7B" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1226.838,105.609 1234.881,103.416 1239.084,101.771 1241.824,100.673 1241.276,102.319 1240.548,104.695 1238.352,106.706
+							1234.699,107.437 1231.41,107.437 1226.838,105.609 		"/>
+
+							<polyline fill="none" stroke="#644A46" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1197.783,90.438 1197.967,94.094 1199.061,97.566 1201.438,101.405 1201.438,98.664 1200.525,93.911 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1212.22,87.33 1216.605,84.406 1221.721,82.213 1224.83,81.664 1227.935,82.579 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1233.968,82.579 1237.439,79.472 1240.178,77.095 1242.374,76.912 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1215.142,90.072 1218.801,87.33 1222.271,85.686 1225.562,85.868 1227.207,85.868 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1218.801,90.255 1221.906,90.255 1224.465,89.524 1226.109,88.428 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1234.699,84.224 1237.621,81.664 1240.728,81.116 1243.469,81.116 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1234.699,84.224 1238.535,83.857 1240.728,83.857 1242.922,83.31 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1237.621,81.664 1238.535,83.857 1240.728,83.857 1240.728,81.116 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1229.947,86.783 1231.773,91.352 1231.773,93.362 1229.399,92.632 1228.119,94.277 1228.302,95.922 1231.41,96.653
+							1232.869,96.288 1235.428,96.288 1238.718,96.288 1239.265,94.643 1239.265,92.632 1237.621,90.987 1237.804,90.438
+							1239.451,91.534 1240.91,93.728 1242.374,95.373 1243.106,96.653 1243.837,97.019 1244.382,97.019 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1227.935,92.266 1226.656,94.277 1226.656,97.201 1225.925,99.395 1224.83,101.588 1223.917,102.868 		"/>
+						<polyline fill="none" stroke="#644A46" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1217.518,89.89 1220.26,88.062 1222.271,87.148 1224.649,86.783 1225.744,86.783 1226.656,86.783 		"/>
+
+							<polyline fill="none" stroke="#644A46" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1218.801,87.33 1220.076,90.255 1223.185,89.89 1223.367,86.966 1222.271,85.686 		"/>
+
+							<polyline fill="none" stroke="#644A46" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+							1234.699,84.224 1236.708,81.482 1240.548,80.202 1242.922,80.385 		"/>
+					</g>
+
+
+				</svg>
+
+
+				<div class="PI" id="PI1" style="right: 70px;top:1450px;">
+
+					<p> Finished in 1908, this Romanesque Revival church facing the river is a Roman Catholic parish church. </p>
+
+				</div>
+
+				<div class="PI" id="PI2" style="left: 315px;top:2020px;">
+
+					<p> Sitting on a large island, this is the largest museum in Munich and the largest museum of science and technology in the world.</p>
+
+				</div>
+				<div class="PI" id="PI3" style="right:45px;top:900px;">
+
+					<p> A small island of willow trees serves as a protected area for birds and mammals during spring breeding season.</p>
+
+				</div>
+				<div class="PI" id="PI4" style="right: 458px;top:1000px;">
+
+					<p> This park contains the city garden and a number of monuments and statues.</p>
+
+				</div>
+				<div class="PI" id="PI5" style="right: 200px;top:2070px;">
+
+					<p> All patent applications in Europe are examined and decided here or in one of their other two offices. Next door is the German patent office.</p>
+
+				</div>
+				<div class="PI" id="PI6" style="right: 440px;top:2860px;">
+
+					<p> Built in the 1890s, this Lutheran parish church was the third protestant church established in Munich. It is the best preserved protestant church of historical Munich.</p>
+
+				</div>
+				<div class="PI" id="PI7" style="right: 660px;top:2500px;">
+
+					<p> This bridge is one of the busiest crossings of the river in Munich. It is also historically notable, because in 1158 Henry der Löwe rerouted the salt trade to go over the Isar at this point. </p>
+
+				</div>
+				<div class="PI" id="PI8" style="left: 13px;top:2240px;">
+
+					<p> This elaborate Art Nouveau indoor swimming and bathing complex opened in 1901. Karl Müller, a wealthy engineer, donated the money to have it built as a public bath for the poor.</p>
+
+				</div>
+				<div class="PI" id="PI9" style="left: 17px;top:2815px;">
+
+					<p> A cultural center in Munich, opened in 1985, which hosts the Munich Philharmonic Orchestra.</p>
+
+				</div>
+				<div class="PI" id="PI10" style="left: 70px;top:3002px;">
+
+					<p> King Maximillian II started this project for a gifted students organization. Since 1949, it is also the meeting place of the Bavarian state parliament. </p>
+
+				</div>
+				<div class="PI" id="PI11" style="right: 115px;top:3330px;">
+
+					<p> The Catholic parish of St. Anna in Lehel exists since 1808 and is cared for by the Franciscans of the St. Anna Monastery.</p>
+
+				</div>
+				<div class="PI" id="PI12" style="right: 40px;top:3560px;">
+
+					<p> A non-collecting public museum and a key global center for contemporary art.</p>
+
+				</div>
+				<div class="PI" id="PI13" style="right: 340px;top:3660px;">
+
+					<p> Don't swim over here! You'll get violently swept under by the standing wave used for river surfing. No matter the weather, people will be here surfing.</p>
+
+				</div>
+				<div class="PI" id="PI14" style="right: 460px;top:4180px;">
+
+					<p> Founded by Maximillian II in 1855, this large art museum houses decorative arts pieces, and the core of its collection is the Wittelsbach family collection.</p>
+
+				</div>
+				<div class="PI" id="PI15" style="left: 52px;top:3955px;">
+
+					<p> It's impossible to miss this monument to peace after the Franco-German war: a shiny golden angel on a tall column rises above the trees. Below the column is a temple with large mosaics.</p>
+
+				</div>
+				<div class="PI" id="PI16" style="left: 130px;top:4455px;">
+
+					<p> Housed in this building is the city library's special collection of all books, manuscripts, and archival material relating to Munich as well as the works of literary and artistic residents of the city.</p>
+
+				</div>
+				<div class="PI" id="PI17" style="left: 60px;top:4960px;">
+
+					<p> This old church is the center of the former village, now district, of Bogenhausen. It is famous for its cemetery, which is a popular burial site for artists.</p>
+
+				</div>
+				<div class="PI" id="PI18" style="right: 235px;top:6430px;">
+
+					<p> Built in 1895, this historic water power plant was originally for a machinery, and later for a flour mill. Today is provides 0.9MW of power to the public grid.</p>
+
+				</div>
+				<div class="PI" id="PI19" style="left: 19px;top:9900px;">
+
+					<p> A pyramidal monument marks one of two reference points for the baseiine of the Bavarian topography survey of 1801. The other point is about 20km NE of here.</p>
+
+				</div>
+				<div class="PI" id="PI20" style="right: 23px;top:12800px;">
+
+					<p> Built 1967-1973, this was the first mosque in Bavaria.</p>
+
+				</div>
+				<div class="PI" id="PI21" style="right: 98px;top:13570px;">
+
+					<p> Iconic for its unusual plastic geometric construction, this arena built in 2002-2005 is the home of FC Bayern and can hold 75,000 people.</p>
+
+				</div>
+	<!-- 			<div class="PI" id="PI21" style="right: 98px;top:13570px;">
+
+					<p> Iconic for its unusual plastic geometric construction, this arena built in 2002-2005 is the home of FC Bayern and can hold 75,000 people.</p>
+
+				</div> -->
+				<div class="PI" id="PI22" style="right:255px;top:13792px;color:black;background-color:rgba(255, 241, 198,0.9)">
+
+					<p> We've done it!! You just swam down the Isar with me! If you wanna do it again, click on <span style="background-color: #FFC300;
+  color: white;border-radius: 4px; padding-top:3px; padding-bottom:3px;padding-left:3px;padding-right:3px;">Back to the Top</span> on the right. Otherwise, just keep the memory with you, my friend!</p>
+
+				</div>
+
+				<div class="PI" id="PI23" style="right: 445px;top:13840px;background-color:rgba(255, 241, 198,0); z-index:50;">
+					<img src="assets/bd-float.png">
+
+
+				</div>
+			</div>
+
+
+
+
+
+
+				<!-- <div> -->
+				<!-- </div> -->
+
+
+
+
+		</div>
+
+		<button onclick="topFunction()" id="goback" title="Go to top">Back to the Top</button>
+
+
+
+
+
+
+<!--put your external script links here-->
+		<script type="text/javascript" src="js/RadarChart.js"></script>
+
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+		<script type="text/javascript" src="js/d3.v4.min.js"></script>
+		<script type="text/javascript" src="js/d3-tile.v0.0.min.js"></script>
+    	<script type="text/javascript" src="lib/topojson.js"></script>
+		<script type="text/javascript" src="lib/d3.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/mouse-follow.js"></script>
+
+		<div id="footerwrap">
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row centered">
+		                    <center>
+								<h6>This project was inspired by Benjamin David, who regularly commutes by swimming down the Isar. <br>
+									To learn more about him, watch <a href="https://youtu.be/AKpgHkaW7lQ">this interview from BBC Capital.</a> </h6>
+
+							<h6>Map data: Open Street Map<br>
+							GIF: <a href="https://youtu.be/AKpgHkaW7lQ">https://youtu.be/AKpgHkaW7lQ</a><br>
+							Cartographers: <a href="https://mliang8.github.io">Mengyu Liang</a> and Sarah Palmer</h6>
+		                    </center>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+
+
+
+
+	<!--script type="text/javascript">
+
+
+		////////////////////////////////
+		//////////auto scrolling//////////
+		//////////////////////////////////
+          var currentpos=0,alt=1,curpos1=900,curpos2=-900
+          function initialize(){
+          startit()
+          }
+          function scrollwindow(){
+          if (document.all)
+          temp=document.body.scrollTop
+          else
+          temp=window.pageYOffset
+          if (alt==0)
+          alt=1
+          else
+          alt=0
+          if (alt==0)
+          curpos1=temp
+          else
+          curpos2=temp
+          if (curpos1!=curpos2){
+          if (document.all)
+          currentpos=document.body.scrollTop+1
+          else
+          currentpos=window.pageYOffset+2
+          window.scroll(0,currentpos)
+          }
+          else{
+          currentpos=0
+          window.scroll(0,currentpos)
+          }
+          }
+          function startit(){
+          setInterval("scrollwindow()",25)
+          }
+          // body.onload=initialize
+
+
+
+
+	</script-->
+
+
+
+
+
+
+
+</html>
