@@ -251,11 +251,14 @@ h3 {
 
 
 #toggle{
-  
-  position: absolute; 
+
+  position: absolute;
   z-index: 5;
-  top: 112%; 
-  left: -1.5%;
+  top: 112%;
+  /* Sits just left of the (centered, 1400px) map column instead of a
+     percentage of the raw viewport width, so it keeps a fixed distance
+     from the map and moves away from the browser edge on wide screens. */
+  left: calc(50% - 700px - 40px);
   width: 110px;
   float:left;
   font-size: 15px;
@@ -286,7 +289,10 @@ h3 {
   transform: rotate(90deg);
   font-size: 15px;
   top: 116%;
-  right: -5%;
+  /* Sits just right of the (centered, 1400px) map column instead of a
+     percentage of the raw viewport width, so it keeps a fixed distance
+     from the map and moves away from the browser edge on wide screens. */
+  right: calc(50% - 700px - 100px);
   border: none;
   outline: none;
   background-color: #FFC300;
