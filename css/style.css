@@ -139,7 +139,7 @@ div#banner{
   width: 1400px;
   margin: 0 auto;
   /* Nudge the whole stage right a bit from dead-center. */
-  left: 40px;
+  left: 120px;
   height: 13230px;
   /*background-color: #000;*/
 }
@@ -482,6 +482,7 @@ p{
 .PI{
 
   position: absolute;
+  z-index: 10;
   color: rgb(68, 61, 94);
   font-weight: normal;
 
