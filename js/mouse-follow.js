@@ -12,7 +12,8 @@
 	// The swimmer's drawn artwork sits to the right of its anchor point, so the
 	// river-tracking position needs a leftward nudge to visually land on the
 	// river channel. Tweak this if it still looks off.
-	var RENDER_OFFSET_X = -150;
+	// On screens wider than the map itself (1400px), shift 50px further right.
+	var RENDER_OFFSET_X = window.innerWidth > 1400 ? -100 : -150;
 
 	var viewBoxWidth = 1400;
 	var viewBoxHeight = 13221;
