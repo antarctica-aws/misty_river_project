@@ -424,7 +424,15 @@
                 else{
                   $("#PI20").hide();
                 };
-                if (scrollval>=13250){
+                // PI21-PI23 are the closing content and sit near/past the
+                // bottom of the map's own height (13230px). A fixed pixel
+                // threshold this far down can end up larger than the page's
+                // actual maximum scroll position (which depends on viewport
+                // height), making them impossible to ever reveal. Trigger
+                // them relative to how close to the bottom of the page the
+                // user has actually scrolled instead.
+                var maxScroll = $(document).height() - $(window).height();
+                if (scrollval >= maxScroll - 300){
 
                   $("#PI21").show();
 
@@ -432,7 +440,7 @@
                 else{
                   $("#PI21").hide();
                 };
-                if (scrollval>=13570){
+                if (scrollval >= maxScroll - 60){
 
                   $("#PI22").show();
 
@@ -440,7 +448,7 @@
                 else{
                   $("#PI22").hide();
                 };
-                 if (scrollval>=13570){
+                if (scrollval >= maxScroll - 60){
 
                   $("#PI23").show();
 
