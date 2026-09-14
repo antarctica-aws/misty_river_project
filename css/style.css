@@ -132,13 +132,9 @@ z-index: -1;
 
 
 div#banner{
-  /* Fixed-width, centered, and the positioning reference for #anime and
-     the .PI popup captions below, so the captions land relative to the
-     map image instead of the browser viewport. */
-  position: relative;
-  width: 1400px;
+  width: 100%;
   height: 13230px;
-  margin: 0 auto;
+  margin-left: 13px;
   /*background-color: #000;*/
   /* background image lives on #anime now, so it can never drift apart
      from the SVG overlay it needs to line up with (see #anime below) */
@@ -155,8 +151,16 @@ div#banner{
 
   position:absolute;
   z-index: 3;
-  top: 0;
-  left: 0;
+  top:100%;
+  /* Centered against the viewport width (the map is 1400px wide) instead
+     of right:1.5%, which pinned it to the right edge. #banner is left
+     position:static on purpose -- the .PI captions below are positioned
+     against the page/viewport, not the map image (a few of them, like
+     #PI21-23, even have top values past the map's own height, i.e. they
+     were always meant to land in the page below the map). Changing
+     #anime's vertical position or #banner's positioning context would
+     shift the map relative to those captions and misalign them. */
+  left: calc(50% - 700px);
 
   /* Same box the SVG artwork draws in (1400x13221, from its own width/height
      attributes), so the river background can never end up positioned
@@ -495,6 +499,10 @@ p{
 
   position: absolute;
   z-index: 10;
+  /* Hidden until the scroll handler in main.js reveals it. Previously
+     only #PI1/#PI2 were hidden via JS on load, so #PI3-#PI23 were all
+     visible at once until the very first scroll event corrected them. */
+  display: none;
   color: rgb(68, 61, 94);
   font-weight: normal;
 

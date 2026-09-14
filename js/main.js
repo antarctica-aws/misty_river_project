@@ -268,9 +268,7 @@
 
 
           $(function() {
-            $("#PI1").hide();
-            $("#PI2").hide();
-            $(window).scroll(function(){
+            function updatePIVisibility(){
                 var scrollval=$(window).scrollTop();
                 if (scrollval>=880){
 
@@ -464,7 +462,12 @@
                 else{
                   $("#PI23").hide();
                 };
-            });
+            }
+
+            // Run once immediately (in case the page loads already
+            // scrolled down), then keep it in sync with scrolling.
+            updatePIVisibility();
+            $(window).scroll(updatePIVisibility);
 
 
           });
