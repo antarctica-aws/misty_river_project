@@ -9,6 +9,11 @@
 	// The base transform baked into the artwork (centers it near the SVG origin).
 	var baseTransform = 'rotate(-15) translate(-814.904,-69.235) scale(0.65, 0.65)';
 
+	// The swimmer's drawn artwork sits to the right of its anchor point, so the
+	// river-tracking position needs a leftward nudge to visually land on the
+	// river channel. Tweak this if it still looks off.
+	var RENDER_OFFSET_X = -150;
+
 	var viewBoxWidth = 1400;
 	var viewBoxHeight = 13221;
 
@@ -89,7 +94,7 @@
 
 		bd.setAttribute(
 			'transform',
-			'translate(' + curX.toFixed(2) + ',' + curY.toFixed(2) + ') rotate(' + curAngle.toFixed(2) + ') ' + baseTransform
+			'translate(' + (curX + RENDER_OFFSET_X).toFixed(2) + ',' + curY.toFixed(2) + ') rotate(' + curAngle.toFixed(2) + ') ' + baseTransform
 		);
 
 		requestAnimationFrame(animate);

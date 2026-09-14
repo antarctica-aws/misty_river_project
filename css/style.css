@@ -479,8 +479,8 @@ p{
 
   position: absolute;
   color: rgb(68, 61, 94);
-  font-weight: 800;
-  
+  font-weight: normal;
+
   width: 150px;
   border-radius: 5px;
   border: 2px solid none  ;
