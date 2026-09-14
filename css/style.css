@@ -132,19 +132,18 @@ z-index: -1;
 
 
 div#banner{
-  /* Fixed-width, centered stage: everything inside (the map, the swimmer,
-     and the popup captions) shares this box as its positioning reference,
-     so they can never drift apart on different screen widths. */
-  position: relative;
-  width: 1400px;
-  margin: 0 auto;
-  /* Nudge the whole stage right a bit from dead-center. */
-  left: 120px;
+  width: 100%;
   height: 13230px;
+  margin-left: 13px;
   /*background-color: #000;*/
+  background-image: url(../assets/background2.png);
+  /*background-size: 90% 90%;*/
+  background-position: 10% 0%;
+  background-repeat: no-repeat;
+  animation: animate-background linear 50s infinite;
 }
 /*@keyframes animate-background {
-  from { background-position: 120% 70px;  }
+  from { background-position: 120% 70px;  } 
   to { background-position: -20% 70px; }
 }*/
 
@@ -152,16 +151,13 @@ div#banner{
 
 
 #anime {
-
-  display: block;
-  position: relative;
+  
+  position:absolute; 
   z-index: 3;
-  background-image: url(../assets/background2.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  animation: animate-background linear 50s infinite;
-
-
+  top:100%; 
+  right: 1.5%;
+  
+ 
 }
 
 #animeMotion:hover{
@@ -482,7 +478,6 @@ p{
 .PI{
 
   position: absolute;
-  z-index: 10;
   color: rgb(68, 61, 94);
   font-weight: normal;
 
