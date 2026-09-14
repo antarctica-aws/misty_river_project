@@ -518,6 +518,11 @@ p{
 
 }
 
+/* Always visible -- sit right at the top of the map, no scroll-toggle. */
+#PI3, #PI4{
+  display: block;
+}
+
 h6{
   font-size: 0.85em;
   font-family: 'Cormorant Garamond';

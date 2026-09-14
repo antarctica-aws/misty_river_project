@@ -286,22 +286,8 @@
                 else{
                   $("#PI2").hide();
                 };
-                if (scrollval>=980){
-
-                  $("#PI3").show();
-
-                }
-                else{
-                  $("#PI3").hide();
-                };
-                if (scrollval>=1000){
-
-                  $("#PI4").show();
-
-                }
-                else{
-                  $("#PI4").hide();
-                };
+                // #PI3 and #PI4 sit right at the top of the map and stay
+                // visible always, rather than being scroll-toggled.
                  if (scrollval>=1620){
 
                   $("#PI5").show();
