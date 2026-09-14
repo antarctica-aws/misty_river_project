@@ -1,9 +1,7 @@
 # The Misty River Project
-An interactive visualization of isar river but with a fun twist
+**An interactive visualization of the Isar River, with a fun twist.**
 
+This interactive tool invites you to explore attractions along Munich’s famous Isar River from a different perspective. Instead of simply viewing places on a map, you can “flow” down the river and discover landmarks and attractions along the way.
 
-This is a simple interactive tool that helps people who are interested in exploring the Isar river in Munich, Germnay to visualize
-attractions along the river. This tool provides an aliternative view of exploration which is by allowing people to have the sense
-of flowing/swimming down the river with Benjamin David, a man who swims to work.
+And you won’t be swimming alone! The experience is inspired by Benjamin David, a Munich resident known for swimming down the Isar as part of his commute to work. Follow along, explore the city from the river, and see Munich from a whole new perspective!
 
-For the video rundown of the webpage, please go to: https://drive.google.com/file/d/1CVY-UX0Ev5BsGCqUWIe38d68kswObEpE/view
