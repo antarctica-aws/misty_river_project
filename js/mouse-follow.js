@@ -13,7 +13,7 @@
 	// river-tracking position needs a leftward nudge to visually land on the
 	// river channel. Tweak this if it still looks off.
 	// On screens wider than the map itself (1400px), shift further right.
-	var RENDER_OFFSET_X = window.innerWidth > 1400 ? -80 : -150;
+	var RENDER_OFFSET_X = window.innerWidth > 1400 ? -60 : -150;
 
 	var viewBoxWidth = 1400;
 	var viewBoxHeight = 13221;
